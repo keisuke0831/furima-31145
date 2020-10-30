@@ -24,10 +24,10 @@
 | Column             | Type        | Options     |
 | --------           | ------      | ----------- |
 | item_name          | string      | null: false |
-| discription        | text        | null: false |
+| description        | text        | null: false |
 | category_id        | integer     | null: false |
 | item_condition_id  | integer     | null: false |
-| shipment_source_id | integer     | null: false |
+| prefecture_id      | integer     | null: false |
 | ship_date_id       | integer     | null: false |
 | shipping_cost_id   | integer     | null: false |
 | price              | integer     | null: false |
@@ -57,7 +57,7 @@
 | Column         | Type       | Options     |
 | -------        | ---------- | ------------|
 | postal_code    | string     | null: false |
-| region         | string     | null: false |
+| prefecture_id  | integer     | null: false |
 | city           | string     | null: false |
 | address        | string     | null: false |
 | building_name  | string     |             |
