@@ -2,16 +2,16 @@
 
 ## users テーブル
 
-| Column          | Type   | Options     |
-| --------        | ------ | ----------- |
-| nickname        | string | null: false |
-| email           | string | null: false unique: true|
-| password        | string | null:       |
-| last_name       | string | null: false |
-| first_name      | string | null: false |
-| last_name_kana  | string | null: false |
-| first_name_kana | string | null: false |
-| birthday        | date   | null: false |
+| Column             | Type   | Options     |
+| --------           | ------ | ----------- |
+| nickname           | string | null: false |
+| email              | string | null: false unique: true|
+| encrypted_password | string | null:       |
+| last_name          | string | null: false |
+| first_name         | string | null: false |
+| last_name_kana     | string | null: false |
+| first_name_kana    | string | null: false |
+| birthday           | date   | null: false |
 
 ### Association
 
@@ -21,17 +21,17 @@
 
 ## items テーブル
 
-| Column          | Type        | Options     |
-| --------        | ------      | ----------- |
-| item_name       | string      | null: false |
-| discription     | text        | null: false |
-| category        | integer     | null: false |
-| item_condition  | integer     | null: false |
-| shipment_source | integer     | null: false |
-| ship_date       | integer     | null: false |
-| shipping_cost   | integer     | null: false |
-| price           | integer     | null: false |
-| user            | references  | null: false , foreign_key:true |
+| Column             | Type        | Options     |
+| --------           | ------      | ----------- |
+| item_name          | string      | null: false |
+| discription        | text        | null: false |
+| category_id        | integer     | null: false |
+| item_condition_id  | integer     | null: false |
+| shipment_source_id | integer     | null: false |
+| ship_date_id       | integer     | null: false |
+| shipping_cost_id   | integer     | null: false |
+| price              | integer     | null: false |
+| user               | references  | null: false , foreign_key:true |
 
 ### Association
 
