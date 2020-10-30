@@ -6,7 +6,7 @@
 | --------        | ------ | ----------- |
 | nickname        | string | null: false |
 | email           | string | null: false unique: true|
-| password        | string | null: false unique: true|
+| password        | string | null:       |
 | last_name       | string | null: false |
 | first_name      | string | null: false |
 | last_name_kana  | string | null: false |
@@ -25,12 +25,11 @@
 | --------        | ------      | ----------- |
 | item_name       | string      | null: false |
 | discription     | text        | null: false |
-| category        | string      | null: false |
-| item_condition  | string      | null: false |
-| shipment_source | string      | null: false |
-| ship_date       | date        | null: false |
-| shipping_cost   | string      | null: false |
-| image           |             | null: false |
+| category        | integer     | null: false |
+| item_condition  | integer     | null: false |
+| shipment_source | integer     | null: false |
+| ship_date       | integer     | null: false |
+| shipping_cost   | integer     | null: false |
 | price           | integer     | null: false |
 | user            | references  | null: false , foreign_key:true |
 
@@ -55,14 +54,15 @@
 
 ## customers テーブル
 
-| Column       | Type       | Options     |
-| -------      | ---------- | ------------|
-| postal_code  | integer    | null: false |
-| region       | string     | null: false |
-| city         | string     | null: false |
-| address      | string     | null: false |
-| phone_number | integer    | null: false |
-| purchases    | references | null: false, foreign_key: true |
+| Column         | Type       | Options     |
+| -------        | ---------- | ------------|
+| postal_code    | string     | null: false |
+| region         | string     | null: false |
+| city           | string     | null: false |
+| address        | string     | null: false |
+| building_name  | string     |             |
+| phone_number   | string     | null: false |
+| purchases      | references | null: false, foreign_key: true |
 
 ### Association
 
