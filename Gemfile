@@ -67,3 +67,6 @@ gem 'devise'
 group :development, :test do
   gem 'pry-rails'
 end
+gem 'active_hash'
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
