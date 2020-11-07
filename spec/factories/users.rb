@@ -10,7 +10,7 @@ FactoryBot.define do
     first_name_kana { person.first.katakana }
     birthday { Faker::Date.backward }
     email { Faker::Internet.free_email }
-    password {"0000aaaa"}
+    password { '0000aaaa' }
     password_confirmation { password }
   end
 end
