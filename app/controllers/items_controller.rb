@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_item, only: [:edit, :update]
+  before_action :set_item, only: [:edit, :update, :show]
   before_action :move_to_index, except: [:index, :show]
   before_action :move_to_top,only: [:edit]
   
@@ -31,6 +31,9 @@ class ItemsController < ApplicationController
     else
       render :edit
     end
+  end
+  def show
+    
   end
 
 
