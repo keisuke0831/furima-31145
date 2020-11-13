@@ -32,7 +32,7 @@ class ItemsController < ApplicationController
       render :edit
     end
   end
-  def show
+  def show 
     
   end
 
