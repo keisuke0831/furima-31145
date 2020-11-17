@@ -67,6 +67,11 @@ gem 'devise'
 
 group :development, :test do
   gem 'pry-rails'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 gem 'active_hash'
 gem 'mini_magick'
